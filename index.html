@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="hero">
+  <div class="btn-box">
+    <button id="btn1" onclick = "openPersonalinfo()"type="button" name="button">Personal Info</button>
+    <button id="btn2" onclick = "openBillinginfo()"type="button" name="button">Billing Info</button>
+    <button id="btn3" onclick = "openConfirmpayment()"type="button" name="button">Confirm Payment</button>
+   </div>
+
+
+
+
+     <div class="info-container">
+       <h1>Complete your purchase</h1>
+
+       <div id="Personalinfo" class=" content top-container info" style="">
+         <form name="myForm" class="was-validated" action="index.html" method="post">
+           <h4><label for="name">Name</label><br></h4>
+           <input type="text" name="name" placeholder="Opera Linus Ahmed" required><br>
+           <h4><label for="mail address">Email Address</label><br></h4> <small>The purchase receipt would be sent to this mail</small><br>
+           <input type="email" name="" placeholder="OperaLinusAhmed@devmail.com" required><br>
+           <h4><label for="add1">Address 1</label><br></h4>
+           <input type="text" name="" placeholder="The address of the user goes here" required><br>
+           <h4><label for="add2">Address2</label><br></h4>
+           <input type="text" name="" placeholder="And here" required><br>
+           <div class="Log">
+             <h4><label for="L/g">Local Government</label></h4>
+             <input type="text" name="" placeholder="Surulere" required>
+           </div>
+           <div class="stat">
+             <h4><label for="State">State</label></h4>
+             <select class="state" name="State">
+               <option value="">Lagos</option>
+               <option value="">kano</option>
+               <option value="">Kaduna</option> <br><br>
+             </select>
+           </div>
+           <div class="next">
+             <a href="#Billinginfo" class="btn  btn-lg " role="button">Next</a>
+           </div>
+           <div class="cancel">
+             <a href="#" class="btn btn-link btn-lg" role="button">Cancel Payment</a>
+           </div>
+         </form>
+       </div>
+
+
+
+
+
+
+           <div id="Billinginfo" class=" content middle-container info" style="">
+             <form class="" action="index.html" method="post">
+               <h4><label for="Name on Card">Name on Card</label><br></h4>
+               <input type="text" name="" placeholder="Opera Linus Ahmed" required><br>
+               <h4><label for="Card type">Card Type</label><br></h4>
+               <select class="" name="visa">
+                 <table>
+                       <option value="">
+                         <tr>
+                          <th>Item Name</th>
+                           <th>Price</th>
+                         </tr>
+                       </option>
+                           <option value="">
+                             <tr>
+                               <td>Data Science and usability</td>
+                               <td>50,000</td>
+                             </tr>
+                           </option>
+                           <option value=""><tr>
+                             <td>Shipping </td>
+                             <td>0.00</td>
+                           </tr></option>
+                          </table>
+                 </div>
+                   </select>
+               <div class="card-details">
+                 <h4><label for="Card details">Card details</label><br></h4>
+                 <input type="number" name="" placeholder="44960 44960 44960" required>
+               </div>
+               <div class="expiry-date">
+                 <h4><label for="Expiry date">Expiry date</label></h4>
+                 <input type="month" name="" placeholder="04/23" required><br>
+               </div>
+               <div class="cvv">
+                 <h4><label for="CVV">CVV</label></h4>
+                 <input type="number" name="" placeholder="923" required><br>
+               </div>
+               <div class="next">
+                 <a href="#Confirmpayment" class="btn btn-lg" role="button">Next</a>
+               </div>
+               <div class="cancel">
+                 <a href="#" class="btn btn-link btn-lg" role="button">Cancel Payment</a>
+               </div>
+            </form>
+           </div>
+
+           <div id="Confirmpayment" class=" content bottom-container info" style="">
+
+             <div class="purchase">
+               <p><i class="fa fa-check fa-4x" ></i></p>
+               <h1>Purchase Completed</h1>
+               <h4>Please check your email for details concerning this transaction.</h4>
+               <div class="home">
+                 <a href="#Personalinfo" class="btn btn-link btn-lg" role="button">Return Home</a>
+               </div>
+             </div>
+
+           </div>
+
+         </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
